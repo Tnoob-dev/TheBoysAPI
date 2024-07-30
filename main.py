@@ -8,12 +8,13 @@ app = FastAPI()
 
 @app.get("/")
 def home():
+    """See if the API is alive"""
     return {"message": "Hello World!"}
 
 
 @app.get("/characters")
 async def get_characters(skip: int = None, limit: int = None):
-
+    """Get all characters of the database"""
     with Session(engine) as session:
         statement = select(TheBoys)
         if skip != None or limit != None:
@@ -31,7 +32,7 @@ async def get_characters(skip: int = None, limit: int = None):
 # @app.post("/characters")
 # async def upload_characters(name: str, full_name: str, description: str,
 #                             image_url: str, actor_name: str, gender: str):
-
+#     """Insert Characters into the database"""
 #     character = TheBoys(name=name, full_name=full_name, description=description,
 #                         image_url=image_url, actor_name=actor_name, gender=gender)
 
