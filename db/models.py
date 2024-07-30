@@ -16,7 +16,7 @@ class TheBoys(SQLModel, table=True):
     actor_name: str
     gender: str
 
-SQLITE_URL = "sqlite:///./database.bd"
+SQLITE_URL = "sqlite:///../database.bd"
 
 engine = create_engine(SQLITE_URL, echo=True)
 
