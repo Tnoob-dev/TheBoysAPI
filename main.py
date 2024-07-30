@@ -1,4 +1,4 @@
-from fastapi import FastAPI, status, Depends, HTTPException
+from fastapi import FastAPI
 from db.models import TheBoys, engine
 from sqlmodel import Session, select
 
@@ -7,7 +7,7 @@ app = FastAPI()
 
 @app.get("/")
 def home():
-    return {"message": "Hola Mundo!"}
+    return {"message": "Hello World!"}
 
 
 @app.get("/characters")

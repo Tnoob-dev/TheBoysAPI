@@ -1,11 +1,10 @@
 from sqlmodel import Field, SQLModel, create_engine
 
-##############
-# Esto crea  #
-# la base de #
-# datos y la #
-# tabla      #
-##############
+###################
+# This creates    #
+# the databse and #
+# the tables      #
+###################
 
 
 class TheBoys(SQLModel, table=True):
