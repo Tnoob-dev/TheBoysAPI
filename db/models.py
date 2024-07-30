@@ -16,12 +16,11 @@ class TheBoys(SQLModel, table=True):
     actor_name: str
     gender: str
 
-SQLITE_URL = "sqlite:///../database.bd"
+
+SQLITE_URL = "sqlite:///./database.bd"
 
 engine = create_engine(SQLITE_URL, echo=True)
 
+
 def create_db_and_tables():
     SQLModel.metadata.create_all(engine)
-    
-if __name__ == "__main__":
-    create_db_and_tables()
