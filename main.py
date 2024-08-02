@@ -33,7 +33,7 @@ async def get_characters(skip: int = None, limit: int = None):
             results = session.exec(statement).all()
 
         res = [i for i in results]
-        return {"results": res}
+        return res
 
 @app.get("/characters/{character_id}", response_model=TheBoys)
 async def get_character_by_id(character_id: int):
