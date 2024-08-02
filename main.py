@@ -33,7 +33,7 @@ async def get_characters(skip: int = None, limit: int = None):
             results = session.exec(statement).all()
 
         res = [i for i in results]
-        return res
+        return {"results": res}
 
 @app.get("/characters/{character_id}", response_model=TheBoys)
 async def get_character_by_id(character_id: int):
@@ -85,6 +85,13 @@ async def get_character_by_id(character_id: int):
 #         if not db_character:
 #             raise HTTPException(404, "Character not found")
         
+#<<<<<<< main
 #         session.delete(db_character)
 #         session.commit()
 #         return {"message" : "Character deleted from db succesfully"}
+#=======
+#        session.delete(db_character)
+#        session.commit()
+#        return {"message" : "Character deleted from db succesfully"}
+    
+#>>>>>>> main
