@@ -36,10 +36,10 @@ For characters:
 For episodes:
 ```json
 {
+  "id": 20,
   "ep_name": "Glorious Five Year Plan",
   "season": "S3E4",
-  "description": "The Boys search for a mysterious weapon in Russia while things are brewing behind the scenes at Vought. Plenty of trouble, gore and twists to foresee.",
-  "id": 20
+  "description": "The Boys search for a mysterious weapon in Russia while things are brewing behind the scenes at Vought. Plenty of trouble, gore and twists to foresee."
 }
 ```
 Installation:
