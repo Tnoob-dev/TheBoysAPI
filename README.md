@@ -19,6 +19,8 @@ How to use the API:
         * Example: /episodes/{episode_id} (to get information about a specific episode by his ID)
 
 Example response:
+
+For characters:
 ```json
 {
   "id": 3,
@@ -28,6 +30,16 @@ Example response:
   "full_name": "John",
   "image_url": "https://static.wikia.nocookie.net/amazons-the-boys/images/5/5b/Homelander-S4.png",
   "gender": "Male"
+}
+```
+
+For episodes:
+```json
+{
+  "ep_name": "Glorious Five Year Plan",
+  "season": "S3E4",
+  "description": "The Boys search for a mysterious weapon in Russia while things are brewing behind the scenes at Vought. Plenty of trouble, gore and twists to foresee.",
+  "id": 20
 }
 ```
 Installation:
