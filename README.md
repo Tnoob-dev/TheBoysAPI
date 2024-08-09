@@ -52,4 +52,4 @@ This API is for educational purposes only and is not intended for commercial use
 
 # Credits to:
 ## Images, names, descriptions and full names of characters -> the-boys.fandom.com
-## all info about episodes -> imdb.com
+## All info about episodes -> imdb.com
