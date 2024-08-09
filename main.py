@@ -138,3 +138,4 @@ async def delete_episodes(episode_id: int):
         session.commit()
         
         return {"message" : "Episode deleted from db succesfully"}
+    
