@@ -44,11 +44,12 @@ For episodes:
 ```
 Installation:
 
-No installation is required. The API is available online.
-
-Examples:
-
-* https://theboysapi.onrender.com/docs
+Open console:
+   * Install requirements from requirements.txt - pip3 install -r requirements.txt
+   * For dev mode:
+      * uvicorn main:app --reload
+   * For production mode:
+      * fastapi run main.py
 
 Contribution:
 
