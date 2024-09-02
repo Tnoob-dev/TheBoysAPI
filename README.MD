@@ -48,7 +48,7 @@ Open console:
    * Install requirements from requirements.txt - pip3 install -r requirements.txt
    * For dev mode:
       * uvicorn main:app --reload
-      or
+      <br>or
       * fastapi dev main.py
    * For production mode:
       * fastapi run main.py
