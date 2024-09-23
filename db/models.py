@@ -1,4 +1,5 @@
-from sqlmodel import Field, SQLModel, create_engine
+from sqlmodel import Relationship, Field, SQLModel, create_engine
+from typing import List
 
 ###################
 # This creates    #
@@ -15,12 +16,23 @@ class TheBoys(SQLModel, table=True):
     image_url: str
     actor_name: str
     gender: str
+    
+    
+
+class Episodes(SQLModel, table=True):
+    id: int | None = Field(default=None, primary_key=True)
+    ep_name: str
+    season: str
+    description: str
 
 
-SQLITE_URL = "sqlite:///./database.bd"
+
+SQLITE_URL = "sqlite:///./database.db"
 
 engine = create_engine(SQLITE_URL, echo=True)
 
 
 def create_db_and_tables():
     SQLModel.metadata.create_all(engine)
+
+create_db_and_tables()
