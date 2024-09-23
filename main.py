@@ -2,11 +2,11 @@ from fastapi import FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
 from db.models import TheBoys, engine
 from sqlmodel import Session, select
-
+import os
 
 app = FastAPI()
 
-origins = ["*"]
+origins = os.getenv("ORIGIN_URL")
 
 app.add_middleware(
     CORSMiddleware,
