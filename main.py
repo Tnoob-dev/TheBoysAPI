@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
 from db.models import TheBoys, Episodes, engine
 from sqlmodel import Session, select
-
+import os
 
 app = FastAPI()
 
